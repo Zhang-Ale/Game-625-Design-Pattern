@@ -67,17 +67,18 @@ namespace ObjectPool.Player
         
         public GameObject ReturnBullet()
         {
-            foreach (GameObject bullet in bulletsInUse)
-            {
-                if (bullet.activeInHierarchy)
-                {
-                    bullet.SetActive(false);
-                    bulletsInUse.Remove(bullet);
-                    bulletsNotInUse.Add(bullet);
-                    return bullet;
-                }
-            }
 
+                foreach (GameObject bullet in bulletsInUse)
+                {
+                    if (bullet.activeInHierarchy)
+                    {
+                        bullet.SetActive(false);
+                        bulletsInUse.Remove(bullet);
+                        bulletsNotInUse.Add(bullet);
+                        return bullet;
+                    }
+                }
+            
             return null;
         }
     }

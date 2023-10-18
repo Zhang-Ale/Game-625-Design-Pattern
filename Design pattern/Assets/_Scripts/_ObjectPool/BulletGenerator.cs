@@ -27,7 +27,10 @@ namespace ObjectPool.Player
             //testing if ReturnBullet works
             if (Input.GetKeyDown(KeyCode.B))
             {
-                bulletPool.ReturnBullet();
+                for (int i = 0; i < 20; i++)
+                {
+                    bulletPool.ReturnBullet();
+                }
             }
 
             //Player shoots
@@ -46,7 +49,7 @@ namespace ObjectPool.Player
         }
         void FireBurst()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 20; i++)
             {
                 GameObject newBullet = bulletPool.GetBullet();
                 newBullet.transform.position = firePoint.position;
