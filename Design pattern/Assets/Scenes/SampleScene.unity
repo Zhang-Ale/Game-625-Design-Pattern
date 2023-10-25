@@ -1918,7 +1918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beca2b618085a7b4e895046c9ffcb9d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1172371229107040214, guid: 03bcff0279d217b408c9e22ae1c5ea83, type: 3}
+  bulletPrefab: {fileID: 7761926966995574659, guid: 50a3560c678a0f942955d9ab07b8902b, type: 3}
 --- !u!4 &1931246102
 Transform:
   m_ObjectHideFlags: 0

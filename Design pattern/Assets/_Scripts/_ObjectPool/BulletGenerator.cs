@@ -93,6 +93,7 @@ namespace ObjectPool.Player
                 GameObject newBullet = bulletPool.GetBullet();
                 newBullet.transform.position = shootPosition.transform.position;
                 Rigidbody bulletRigidbody = newBullet.GetComponent<Rigidbody>();
+
                 float angleIncrement = 360f / Random.Range(-90, 90);
 
                 if (angleIncrement != 0) //to make sure angle is never i*0
