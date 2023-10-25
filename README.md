@@ -27,6 +27,6 @@ Implementation: put the shootgun bullets that are shot in a container to re-use 
 
 
 
-[**Play link**](https://zhang-ale.github.io/Game-625-Design-Pattern/Design pattern/Build/) 
+[**Play link**](https://zhang-ale.github.io/Game-625-Design-Pattern/Design%20pattern/Build/) 
 
 [**Link to source (GitHub page)**](https://github.com/Zhang-Ale/Game-625-Design-Pattern) 
