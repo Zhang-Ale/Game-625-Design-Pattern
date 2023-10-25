@@ -16,6 +16,6 @@ Skill description: your gun can turn into a shotgun for 10 seconds and shoot mul
 Skill cooldown after usage: 10 seconds. 
 
 
-[**Play link**]() 
+[**Play link**](https://zhang-ale.github.io/Game-625-Design-Pattern/Build/) 
 
 [**Link to source (GitHub page)**](https://github.com/Zhang-Ale/Game-625-Design-Pattern) 
