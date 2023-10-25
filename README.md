@@ -18,7 +18,7 @@ Skill cooldown after usage: 10 seconds.
 
 **Implemented programming pattern: "Object pooling".**
 
-Implementation: pit the shootgun bullets that are shot in a container to re-use them again for next time the player shoots. 
+Implementation: put the shootgun bullets that are shot in a container to re-use them again for next time the player shoots. 
 
 
 
