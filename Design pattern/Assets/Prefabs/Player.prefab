@@ -194,6 +194,8 @@ GameObject:
   - component: {fileID: 8816360188753099248}
   - component: {fileID: 8816360188753099151}
   - component: {fileID: 8816360188753099145}
+  - component: {fileID: 1759155321}
+  - component: {fileID: 1759155322}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -316,3 +318,43 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1759155321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816360188753099249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b9693a797b53e4b8c657810985fb01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poweredUp: 0
+  radius: 1
+  bulletPool: {fileID: 0}
+  pistol: {fileID: 8816360187050099325}
+  pistolAnim: {fileID: 8816360187050099320}
+  _fireRate: 0.5
+  shootPosition: {fileID: 8816360186975815046}
+  forceMultiplicator: 2
+  _bulletPrefab: {fileID: 7761926966995574659, guid: 50a3560c678a0f942955d9ab07b8902b, type: 3}
+  skillTimer: 0
+  shotGunShot: 0
+--- !u!114 &1759155322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816360188753099249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34c7524b3f2a3d468b686b539c4fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poweredUp: 0
+  particle: {fileID: 5170547112077954477, guid: b8f1df15bfacedc4abddf46c7a3621c4, type: 3}
+  PUparticle: {fileID: 5170547112077954477, guid: 75be45e21ac23664b8d942c90ce461a6, type: 3}
+  playerDead: 0
+  pistol: {fileID: 8816360187050099325}

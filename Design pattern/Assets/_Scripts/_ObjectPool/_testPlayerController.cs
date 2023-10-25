@@ -17,7 +17,7 @@ public class _testPlayerController : MonoBehaviour
 
     void Update()
     {
-        //palyer movement
+        //player movement
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 

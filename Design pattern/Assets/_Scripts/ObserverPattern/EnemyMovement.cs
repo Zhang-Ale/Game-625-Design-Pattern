@@ -26,7 +26,7 @@ public class EnemyMovement : Observable
         else
         {
             agent.speed = 0;
-            agent.SetDestination(this.gameObject.transform.position);
+            agent.SetDestination(gameObject.transform.position);
         }
 
         

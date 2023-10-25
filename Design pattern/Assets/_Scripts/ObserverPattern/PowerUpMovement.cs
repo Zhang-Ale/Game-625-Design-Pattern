@@ -22,7 +22,7 @@ public class PowerUpMovement : Observable
     {
         SetUp();
         _destinations = GameObject.FindGameObjectsWithTag("Destination");
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
+
     }
 
     void Update()
@@ -30,26 +30,28 @@ public class PowerUpMovement : Observable
         if (menu.gameStarted)
         {
             SetNextDestination();
-
-            var distanceToTarget = Vector3.Distance(transform.position, enemy.transform.position);
-
-            if (distanceToTarget < smellSense)
+            enemy = GameObject.FindGameObjectWithTag("Enemy");
+            if(enemy != null)
             {
-                agent.destination = enemy.transform.position;
-                moveSpeed = 40;
-                isSeeking = true;
-            }
-            else
-            {
-                isSeeking = false;
-                moveSpeed = 30;
-                var distanceToDestination = Vector3.Distance(transform.position, _destination.transform.position);
-
-                if (distanceToDestination < .5f)
+                var distanceToTarget = Vector3.Distance(transform.position, enemy.transform.position);
+                if (distanceToTarget < smellSense)
                 {
-                    SetNextDestination();
+                    agent.destination = enemy.transform.position;
+                    moveSpeed = 40;
+                    isSeeking = true;
                 }
-            }
+                else
+                {
+                    isSeeking = false;
+                    moveSpeed = 30;
+                    var distanceToDestination = Vector3.Distance(transform.position, _destination.transform.position);
+
+                    if (distanceToDestination < .5f)
+                    {
+                        SetNextDestination();
+                    }
+                }
+            }  
         }
 
         if (GetComponent<Rigidbody>().velocity.magnitude != 0)

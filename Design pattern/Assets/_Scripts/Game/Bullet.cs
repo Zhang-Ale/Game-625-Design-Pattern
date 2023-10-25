@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, 2f);     
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Enemy")
         {
@@ -20,6 +20,6 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject); 
         }
-    }
+    }*/
 
 }

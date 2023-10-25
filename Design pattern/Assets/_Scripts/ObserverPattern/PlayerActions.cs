@@ -15,9 +15,7 @@ public class PlayerActions : MonoBehaviour, IObserver
     public AudioClip _comboAudioClip;
     public AudioClip _collectAudioClip;
     public CameraScript CS;
-    public GameObject powerUpIcon; 
     public ParticleSystem splashPart; 
-    public Transform enemyDeathPos; 
 
     public void OnNotify(GameObject GameObj, Action actionType)
     {
@@ -53,7 +51,6 @@ public class PlayerActions : MonoBehaviour, IObserver
                     StopCoroutine(_currentPowerUpResetRoutine);
                 }
                 _audioPlayer1.Play();
-                powerUpIcon.SetActive(true);
                 _currentPowerUpResetRoutine = StartCoroutine(PowerUpResetRoutine());
                 break;
 
@@ -72,7 +69,6 @@ public class PlayerActions : MonoBehaviour, IObserver
     IEnumerator PowerUpResetRoutine()
     {
         yield return new WaitForSeconds(5f);
-        powerUpIcon.SetActive(false);
     }
 
     IEnumerator ComboResetRoutine()

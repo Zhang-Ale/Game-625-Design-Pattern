@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 6527158955592757066}
   - component: {fileID: 6527158955592757069}
   - component: {fileID: 5693977797083328348}
+  - component: {fileID: -4596500660082074057}
+  - component: {fileID: -7524531347273940522}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -115,7 +117,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 4
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!195 &6527158955592757069
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -234,3 +236,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-4596500660082074057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527158955592757070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ed774b4269a53439cd92a72f8ffc0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poweredUp: 0
+  part: {fileID: 5170547112077954477, guid: 166c485337a92bf41817e42f6f839e00, type: 3}
+  PUparticle: {fileID: 5170547112077954477, guid: 75be45e21ac23664b8d942c90ce461a6, type: 3}
+--- !u!114 &-7524531347273940522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6527158955592757070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7ec48d5d4269940be92dd7fca33bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poweredUp: 0
+  currentHealth: 0
+  whiteMat: {fileID: 2100000, guid: 610d269cd189f9443a40f7e8da38433b, type: 2}
+  notified: 0
