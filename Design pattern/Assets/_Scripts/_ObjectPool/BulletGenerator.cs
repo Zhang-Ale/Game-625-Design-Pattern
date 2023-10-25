@@ -50,7 +50,7 @@ namespace ObjectPool.Player
 
             if (Input.GetMouseButtonDown(0) && !shotGunShot)
             {
-                FireBurst();
+                FireBurst(direction);
                 Notify(this.gameObject, Action.OnPlayerShoot);
                 shotGunShot = true; 
             }
@@ -67,7 +67,7 @@ namespace ObjectPool.Player
             if (skillTimer <= 0)
             {
                 skillTimer += Time.time;
-                if (skillTimer == 10 && Input.GetMouseButtonDown(0) && _fireRate < Time.time)
+                if (Input.GetMouseButtonDown(0) && _fireRate < Time.time)
                 {
                     ShootBullet(direction);
                     Notify(this.gameObject, Action.OnPlayerShoot);
@@ -86,7 +86,7 @@ namespace ObjectPool.Player
         {
             GameObject newBullet = bulletPool.GetBullet();
         }
-        void FireBurst()
+        void FireBurst(Vector3 direction)
         {
             for (int i = 0; i < 20; i++)
             {
