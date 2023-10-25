@@ -8,7 +8,8 @@ Pacman game where you can kill enemies.
 **How to play:** 
 Move your character around with the WASD keys and shoot the enemies with bullets. 
 
-Unique skill: "SHOTGUN".
+
+**Unique skill: "SHOTGUN".**
 
 Skill description: your gun can turn into a shotgun for 10 seconds and shoot multiple bullets. Press R to reload the bullets to shoot again. 
 
