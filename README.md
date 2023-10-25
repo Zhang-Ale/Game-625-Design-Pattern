@@ -13,7 +13,7 @@ Move your character around with the WASD keys and shoot the enemies with bullets
 
 Skill description: your gun can turn into a shotgun for 10 seconds and shoot multiple bullets. Press R to reload the bullets to shoot again. 
 
-Skill cooldown after usage: 10 seconds. 
+Skill cooldown after usage: 10 seconds. (currently bugged as during the 10 sec cooldown the player can still shoot the shotgun)
 
 
 **Implemented programming pattern: "Object pooling".**
