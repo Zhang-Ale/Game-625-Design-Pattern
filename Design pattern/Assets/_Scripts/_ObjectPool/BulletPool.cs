@@ -10,8 +10,8 @@ namespace ObjectPool.Player
     {
         public GameObject bulletPrefab;
 
-        private List<GameObject> bulletsInUse = new();
-        private List<GameObject> bulletsNotInUse = new();
+        private List<GameObject> bulletsInUse = new List<GameObject>();
+        private List<GameObject> bulletsNotInUse = new List<GameObject>();
         
 
         // Start is called before the first frame update
